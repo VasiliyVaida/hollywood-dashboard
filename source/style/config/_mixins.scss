@@ -1,0 +1,88 @@
+@mixin flexible($content, $items, $direction, $wrap) {
+    display: flex;
+    justify-content: $content;
+    align-items: $items;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+
+@mixin nav-links {
+    font-family: $regular-font;
+    text-decoration: none;
+    color: $nav-color;
+    font-size: 0.625rem;   
+}
+
+@mixin button-picture {
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-left: 1px solid #f1f1f1;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+@mixin position-text {
+    font-family: $regular-font;
+    color: $primary-color;
+    font-size: 0.625rem;
+}
+
+@mixin header-item-title {
+    font-family: $bold-font;
+    font-size: 0.75rem;
+    color: $title-color;
+    margin: 0;
+}
+
+@mixin header-item-number {
+    font-family: $bold-font;
+    font-size: 1.25rem;
+    color: #fd7858;
+    margin: 0;
+}
+
+@mixin header-item-index {
+    font-family: $bold-font;
+    font-size: 0.75rem;
+    color: #bfbfbf;
+    margin: 0;
+}
+
+@mixin main-titles {
+    font-family: $bold-font;
+    font-size: 0.875rem;
+    color: #767676;
+}
+
+
+
+
+// Small devices
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+ }
+ 
+ // Medium devices
+ @mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+ }
+ 
+ // Large devices
+ @mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+ }
+ 
+ // Extra large devices
+ @mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+ }

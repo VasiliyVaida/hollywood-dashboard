@@ -1,0 +1,65 @@
+.navigation {
+    @include flexible(flex-start, flex-start, column, nowrap);
+    position: relative;
+    height: 100%;
+    width: 5.102%;
+}
+
+.logo {
+    @include flexible(center, center, row, nowrap);
+    width: 100%;
+    height: 7%;
+}
+
+.nav-menu {
+    @include flexible(space-between, center, column, nowrap);
+    width: 100%;
+    height: 93%;
+    background: linear-gradient(180deg, #bc664a, #ca5061);
+}
+
+li {
+    list-style-type: none;
+}
+
+.menu__list {
+    padding: 0;
+    margin: 0;
+    margin-top: 1.5em;
+
+}
+
+.menu__list-item {
+    @include flexible(center, center, column, nowrap);
+    margin-bottom: 1.5em;
+}
+
+a {
+    @include nav-links;
+}
+
+.list-item__link {
+    margin-bottom: 1em;
+}
+
+.nav__triangle {
+    position: absolute;
+    top: 10%;
+    left: 100%;
+    width: 0; 
+    height: 0;
+    border-top: 8px solid transparent;
+    border-left: 8px solid #b65540;
+    border-bottom: 8px solid transparent;
+}
+
+.nav__button {
+    margin-bottom: 1.5em;
+    border: none;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    background: url(../img/nav/power-btn.png) center no-repeat;
+    outline: none;
+}
+

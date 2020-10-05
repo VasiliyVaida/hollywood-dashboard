@@ -1,0 +1,191 @@
+.header {
+    max-width: 1300px;
+
+}
+
+.header-tabs {
+    max-width: 1300px;
+}
+
+.tabs__list {
+    @include flexible(space-between, flex-start, row, nowrap);
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.tabs-item__left-buttons {
+    @include flexible(flex-start, flex-start, row, nowrap);
+}
+
+.tabs-item__search-form {
+    @include flexible(center, center, row, nowrap);
+    height: 70px;
+    flex-grow: 1;
+}
+
+.tabs-item__right-buttons {
+    @include flexible(flex-start, flex-start, row, nowrap);
+}
+
+.tabs__link:last-child {
+    border-right: 1px solid #f1f1f1;
+}
+
+.tabs-item__user-section {
+    @include flexible(flex-start, flex-start, row, nowrap);
+}
+
+.tabs__more-button {
+    @include button-picture;
+    background: url(../img/header/more.png) center no-repeat;
+}
+
+.tabs__folder-button {
+    @include button-picture;
+    background: url(../img/header/folder.png) center no-repeat;
+}
+
+.tabs__settings-button {
+    @include button-picture;
+    background: url(../img/header/settings.png)  center no-repeat;    
+}
+
+.tabs__upload-button {
+    @include button-picture;
+    background: url(../img/header/upload.png)  center no-repeat;
+}
+
+.tabs__envelope-button {
+    @include button-picture;
+    background: url(../img/header/envelope.png)  center no-repeat; 
+}
+
+.tabs__planet-button {
+    @include button-picture;
+    background: url(../img/header/planet-earth.png) center no-repeat;
+}
+
+h1 {
+    margin: 22px 0px 9px 18px;
+    font-family: $bold-font;
+    color: #fd7858;
+    font-size: calc(0.675rem + 0.23vw);
+}
+
+.user-position {
+    margin: 0px 0px 0px 18px;
+    @include position-text;
+}
+
+.tabs__searching-input {
+    width: 299px;
+    padding: 12px 13px;
+    border: 1px solid $primary-color;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    background: url(../img/header/search.png) no-repeat;
+    background-position: 90%;
+    background-color: #f8f8f8;
+    outline: none;
+}
+
+h1 {
+    margin-right: 3em;
+}
+
+.tabs__user-menu {
+    height: 5.47vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-menu__circle {
+    margin: 1px 18px;
+    margin-left: 49px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #bfbfbf;
+}
+
+.tabs__section {
+    width: 100%;
+    display: flex;
+}
+
+.tabs__major-list {
+    @include flexible(space-between, flex-start, row, nowrap);
+    flex: auto;
+    max-width: 1105px;
+    margin: 0;
+    overflow-x: auto;
+}
+
+.tabs__major-list-item {
+    @include flexible(flex-start, flex-start, column, nowrap);
+    white-space: nowrap;
+}
+
+h3 {
+    @include header-item-title;
+    margin-top: 22px;
+    white-space: nowrap;
+}
+
+.major-list__item-number {
+    @include header-item-number;
+}
+
+.major-list__item-index {
+    @include flexible(flex-start, flex-start, row, nowrap);
+    margin-bottom: 22px;
+}
+
+.major-list__item-index--left {
+    @include header-item-index;
+    position: relative;
+    padding-right: 8px;
+    margin-left: 10px;
+}
+
+.major-list__item-index--right {
+    @include header-item-index;
+    padding-left: 9px;
+}
+
+.major-list__item-index--left::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    bottom: 2px;
+    width: 0; 
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom: 6px solid #9590c5;
+}
+
+.major-list__item-index--left::after {
+    content: "";
+    position: absolute;
+    left: 35px;
+    bottom: 5px;
+    width: 0; 
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 6px solid #ca5965;
+}
+
+.tabs-section__button {
+    padding:0 61px;
+    border: none;
+    font-size: 0.75rem;
+    color: #fd7858;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
